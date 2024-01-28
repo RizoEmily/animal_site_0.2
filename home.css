@@ -1,0 +1,116 @@
+@charset "UTF-08";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
+/*família de fontes: 'Montserrat Alternates', sem serifa;*/
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+/*font-family: 'Oi', serif;*/
+
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+:root{
+    --font_t: 'Oi', serif;
+    --font_mont: 'Montserrat Alternates', sem serifa;
+}
+
+body{
+    background-color: #2F2F2F;
+    background-image: url(/img_animais/Desktop\ -\ 9.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--font_mont);
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.t_animal{
+    font-size: 4em;
+    text-align: center;
+    color: #AD6CFF;
+    font-family: var(--font_mont);
+}
+
+.t_jam{
+    font-size: 3em;
+    font-weight: 10;
+    font-family: var(--font_t);
+    text-align: center;
+    color: #AD6CFF;
+}
+
+menu{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.opcoes:hover{
+    padding: 10px 50px ;
+    background-color: #AD6CFF;
+    border-radius: 20px;
+}
+
+
+.opcoes{
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    font-size: 1em;
+}
+
+main{
+    text-align: center;
+    color: white;
+    padding: 100px;
+}
+
+main > h4{
+    padding-bottom: 30px;
+}
+
+.clique{
+    color: rgba(207, 206, 207, 0.438);
+}
+
+.bolas{
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+#bolinha1{
+    background-color: #AD6CFF;
+}
+
+.bola{
+    border-radius: 90px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background-color: aliceblue;
+    display: inline-block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+}

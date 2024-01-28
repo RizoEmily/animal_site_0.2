@@ -1,0 +1,237 @@
+@charset "UTF-08";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
+/*família de fontes: 'Montserrat Alternates', sem serifa;*/
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+/*font-family: 'Oi', serif;*/
+
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+:root{
+    --font_t: 'Oi', serif;
+    --font_mont: 'Montserrat Alternates', sem serifa;
+}
+
+body{
+    background-color: #2F2F2F;
+    background-image: url(/img_animais/Desktop\ -\ 9.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--font_mont);
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.t_animal{
+    font-size: 4em;
+    text-align: center;
+    color: #AD6CFF;
+    font-family: var(--font_mont);
+}
+
+.t_jam{
+    font-size: 3em;
+    font-weight: 10;
+    font-family: var(--font_t);
+    text-align: center;
+    color: #AD6CFF;
+}
+
+menu{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.opcoes:hover{
+    padding: 10px 50px ;
+    background-color: #AD6CFF;
+    border-radius: 20px;
+}
+
+
+
+.opcoes{
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    font-size: 1em;
+}
+
+main{
+    margin-top: 20px ;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section > div{
+    min-width: 100px;
+    max-width: 100;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 1px 5px black;
+
+}
+
+
+
+.fileira01{
+    display: flex;
+    margin: auto;
+    gap: 30px;
+    padding: 0;
+}
+
+.fileira02{
+    display: flex;
+    margin: auto;
+    gap: 30px;
+    padding: 0;
+}
+
+.texto01 ,.texto02 ,.texto03,.texto04, .texto05, .texto06 {
+    opacity: 0;
+}
+
+.animal1:hover .texto01,
+.animal2:hover .texto02,
+.animal3:hover .texto03,
+.animal4:hover .texto04,
+.animal5:hover .texto05,
+.animal6:hover .texto06 {
+    opacity: 1; /* Quando passa o mouse sobre o animal, o texto aparece */
+    color: #ffffff;
+    transition: opacity 0.4s ease-in-out;
+    text-align: center;
+    padding: 100px 10px;
+}
+
+.animal1:hover,
+.animal2:hover,
+.animal3:hover,
+.animal4:hover ,
+.animal5:hover,
+.animal6:hover   {
+    opacity: 0.6;
+    transition: opacity 0.4s ease-in-out; /* Transição suave da opacidade */
+    box-shadow: 0px 0px 10px #AD6CFF;
+}
+
+.animal1{
+    background-image: url(img_animais/cachorro.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.animal2{
+    background-image: url(img_animais/panda.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+
+.saiba_mais{
+    display: flex;
+    margin: auto;
+    gap: 30px;
+    padding: 0;
+}
+
+.botao_info01, .botao_info02, .botao_info03{
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 20px;
+    max-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url(img_animais/gradiroxo.avif) ;
+    background-position: center right;
+    font-size: 10px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+
+
+.animal3{
+    background-image: url(img_animais/papagaio.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.animal4{
+    background-image: url(img_animais/pato.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.animal5{
+    background-image: url(img_animais/pinguim.jpg);
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+.animal6{
+    background-image: url(img_animais/tigre.jpg);
+    background-position: right;
+    background-size: 130%;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+img{
+    width: 40px;
+    height: auto;
+}
+
+.clique{
+    color: rgba(207, 206, 207, 0.438);
+}
+
+.bolas{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+#bolinha3{
+    background-color: #AD6CFF;
+}
+
+.bola{
+    border-radius: 90px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background-color: aliceblue;
+    display: inline-block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 5px 5px;
+    margin: auto;
+}
